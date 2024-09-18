@@ -1,0 +1,47 @@
+.hud{
+	position:absolute;
+	top:5px;
+	right:5px;
+	width:240px;
+	height:60px;
+	border:solid 1px white;
+	border-radius: 15px;
+	color:white;
+	padding:10px;
+	font-size:12px;
+	z-index: 99;
+}
+.hud-line{
+	z-index:101;
+	margin:0;
+	padding: 0;
+	width:100%;
+	display:flex;
+	flex-direction: row;
+	color:white;
+}
+.hud-label{
+	display:inline;
+}
+.hud-value{
+	flex:1;
+	display: inline;
+	font-weight:bold;
+	text-align: right;
+}
+.hud-background{
+	opacity:30%;
+	background-color: gray;
+	position:absolute;
+	top:5px;
+	right:5px;
+	width:240px;
+	height:60px;
+	border:solid 1px white;
+	border-radius: 15px;
+	color:white;
+	padding:10px;
+	font-size:12px;
+	z-index: 95;
+
+}

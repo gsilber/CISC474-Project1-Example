@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/hud.css" rel="stylesheet" type="text/css" />
+    <link href="css/ship.css" rel="stylesheet" type="text/css" />
+    <link href="css/terrain.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/constants.js"></script>
+    <script src="js/state.js"></script>
+    <script src="js/hud.js"></script>
+    <script src="js/ship.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/terrain.js"></script>
+    <script src="js/game.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Lander Example</div>
+
+      <div id="window">
+        <!-- Scroll window is scaled to fit screen along with everything inside of it-->
+        <div id="scroll-window">
+        
+          <!-- Start Hud -->
+          <div class="hud-background"></div>
+          <div class="hud">
+            <div class="hud-line">
+              <div class="hud-label">Altitude (msl)</div>
+              <div class="hud-value"><span id="altitudeMSL">1000</span> m.</div>
+            </div>
+            <div class="hud-line">
+              <div class="hud-label">Altitude (ground)</div>
+              <div class="hud-value">
+                <span id="altitudeGROUND">1000</span> m.
+              </div>
+            </div>
+            <div class="hud-line">
+              <div class="hud-label">Fuel</div>
+              <div class="hud-value"><span id="fuel">0</span> l.</div>
+            </div>
+            <div class="hud-line">
+              <div class="hud-label">Velocity</div>
+              <div class="hud-value"><span id="Velocity">0</span> m/s</div>
+            </div>
+          </div>
+          <!-- End Hud -->
+        
+          <!--Start Ship-->
+          <div id="ship">
+            <div id="ship-body" class="ship-body"></div>
+            <div id="ship-flame"></div>
+          </div>
+          <!--End Ship-->
+        <div id="terrain">
+          <svg width="1000" height="100">
+            <polygon id="terrain-list" fill="white" />
+
+          </svg>
+        </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Start hidden popup -->
+    <div id="popup">
+    <div id="popup-card">
+      <div id="popup-title">
+      Game Over
+      </div>
+      <div id="popup-content">
+      <p>Your score: <span id="score"></span></p>
+      </div>
+      <div class="popup-buttons">
+      <button id="popup-button" class="pretty-button">Restart</button>
+      </div>
+    </div>
+  </div>
+  <!-- End hidden popup -->
+   
+  </body>
+</html>

@@ -1,0 +1,33 @@
+#ship{
+	position:absolute;
+	width:100px;
+	height:100px;
+	left:0px;
+	bottom:930px;
+	transform: translateY(0px);
+}
+
+.ship-body{
+	position:absolute;
+	width:100px;
+	height:80px;
+	background-image: url(../img/lander.png);
+	background-size:contain;
+	background-repeat: no-repeat;
+	left:0px;
+	Top:0px;
+}
+
+.crash{
+	background-image: url(../img/explode.gif);
+}
+#ship-flame{
+	position:absolute;
+	width:20px;
+	height:20px;
+	display: none;;
+	background-image:url(../img/flame.png);
+	left:42px;
+	bottom:0px;
+	background-size: cover;
+}
